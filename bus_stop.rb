@@ -12,7 +12,16 @@ attr_reader(:name)
 
  def add_person_to_queue(person)
    @queue << person
- end 
+ end
+
+ def return_queue
+   @queue
+ end
+
+ def pick_up
+   @queue.clear()
+
+ end
 
 
 end
